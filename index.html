@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ake.net</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.min.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+        <header class="header sticky-top">
+    <div class="header__container container-fluid d-flex align-items-center">
+        <a class="header__logo" href="#">
+            <img src="img/logo.png" alt="Ake.net">
+        </a>
+        <nav class="header__nav">
+            <div class="dropdown">
+                <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Прокси
+                    <svg class="arrow">
+                        <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
+                    </svg>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <div class="dropdown-item active">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
+                            </svg>
+                            <div class="d-flex flex-column">
+                                <div class="dropdown-item__title">Резидентные</div>
+                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
+                            </svg>
+                            <div class="d-flex flex-column">
+                                <div class="dropdown-item__title">Мобильные</div>
+                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
+                            </svg>
+                            <div class="d-flex flex-column">
+                                <div class="dropdown-item__title">Серверные</div>
+                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Цены
+                    <svg class="arrow">
+                        <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
+                    </svg>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <div class="dropdown-item active">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
+                            </svg>
+                            <div class="d-flex flex-column">
+                                <div class="dropdown-item__title">Резидентные</div>
+                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
+                            </svg>
+                            <div class="d-flex flex-column">
+                                <div class="dropdown-item__title">Мобильные</div>
+                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
+                            </svg>
+                            <div class="d-flex flex-column">
+                                <div class="dropdown-item__title">Серверные</div>
+                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Информация
+                    <svg class="arrow">
+                        <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
+                    </svg>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <div class="dropdown-item active">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
+                            </svg>
+                            <div class="d-flex flex-column">
+                                <div class="dropdown-item__title">Резидентные</div>
+                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
+                            </svg>
+                            <div class="d-flex flex-column">
+                                <div class="dropdown-item__title">Мобильные</div>
+                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
+                            </svg>
+                            <div class="d-flex flex-column">
+                                <div class="dropdown-item__title">Серверные</div>
+                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="header__nav-link">Контакты</a>
+        </nav>
+        <div class="lang-selector">
+            <div class="dropdown">
+                <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#globe"></use>
+                    </svg>
+                    En
+                    <svg class="arrow">
+                        <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
+                    </svg>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <div class="dropdown-item active">
+                            English
+                            <svg class="check">
+                                <use xlink:href="img/sprites/sprite.svg#check"></use>
+                            </svg>
+                        </div>
+                        <div class="dropdown-item">
+                            Русский
+                            <svg class="check">
+                                <use xlink:href="img/sprites/sprite.svg#check"></use>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__buttons">
+            <a href="#" class="btn btn-transparent">Вход</a>
+            <a href="#" class="btn">Регистрация</a>
+        </div>
+        <div class="header__burger" type="button" data-bs-toggle="collapse" data-bs-target="#burgerMenu" aria-controls="burgerMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<div class="collapse burgerMenu" id="burgerMenu">
+    <div class="burgerMenu__content">
+        <div class="burgerMenu__collapse">
+            <a class="burgerMenu__link" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="Link">
+                Прокси
+                <svg class="arrow">
+                    <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
+                </svg>
+            </a>
+            <div class="collapse" id="collapse1">
+                <ul>
+                    <li><a href="#">Резидентные</a></li>
+                    <li><a href="#">Мобильные</a></li>
+                    <li><a href="#">Серверные</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="burgerMenu__collapse">
+            <a class="burgerMenu__link" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="Link">
+                Цены
+                <svg class="arrow">
+                    <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
+                </svg>
+            </a>
+            <div class="collapse" id="collapse2">
+                <ul>
+                    <li><a href="#">Резидентные</a></li>
+                    <li><a href="#">Мобильные</a></li>
+                    <li><a href="#">Серверные</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="burgerMenu__collapse">
+            <a class="burgerMenu__link" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="Link">
+                Информация
+                <svg class="arrow">
+                    <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
+                </svg>
+            </a>
+            <div class="collapse" id="collapse3">
+                <ul>
+                    <li><a href="#">Резидентные</a></li>
+                    <li><a href="#">Мобильные</a></li>
+                    <li><a href="#">Серверные</a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="burgerMenu__link">Контакты</a>
+        <div class="burgerMenu__lang">
+            <div class="burgerMenu__lang-title">Язык</div>
+            <a class="burgerMenu__lang-current" data-bs-toggle="collapse" href="#collapseLangs" role="button" aria-expanded="false" aria-controls="Languages">
+                Русский
+                <svg class="arrow">
+                    <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="collapse" id="collapseLangs">
+            <ul>
+                <li>
+                    <div class="lang">
+                        English
+                        <svg class="check">
+                            <use xlink:href="img/sprites/sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="lang current">
+                        Русский
+                        <svg class="check">
+                            <use xlink:href="img/sprites/sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="burgerMenu__buttons">
+            <a href="#" class="btn btn-transparent active">Вход</a>
+            <a href="#" class="btn">Регистрация</a>
+        </div>
+    </div>
+</div>
+
+        <main>
+            <section class="section main">
+                <div class="container">
+                    <div class="main__content">
+                        <h1>Попробуйте <span>бесплатно</span> прокси перед покупкой!</h1>
+                        <p>Самая большая база мобильных, резидентных<br/> и серверных прокси в одном месте</p>
+                        <a href="#" class="btn btn-lg">Попробовать бесплатно</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="stats">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 mb-4 mb-md-0">
+                            <div class="stats__item">
+                                <div class="stats__item-num">9М+</div>
+                                <div class="stats__item-title">Огромный пулл прокси</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 mb-4 mb-md-0">
+                            <div class="stats__item">
+                                <div class="stats__item-num">838 003 995 GB</div>
+                                <div class="stats__item-title">Объем трафика за 24ч</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="stats__item">
+                                <div class="stats__item-num">188+ стран</div>
+                                <div class="stats__item-title">Представлены все страны мира</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <section class="section">
+                    <h2 class="title">Чем мы лучше других?</h2>
+                    <p class="description">Мы настолько уверены в себе, что даем потестировать бесплатно перед покупкой!</p>
+                    <div class="section__content">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 mb-4 mb-md-0">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <svg>
+                                                <use xlink:href="img/sprites/sprite.svg#price"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Цена</div>
+                                    <div class="card__description">Мы даем самую низкую цену на трафик! Найдете ниже — приходите, и мы сделаем скидку!</div>
+                                    <div class="card__bottom">
+                                        <a href="#" class="link">
+                                            Подробнее
+                                            <svg>
+                                                <use xlink:href="img/sprites/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 mb-4 mb-md-0">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <svg>
+                                                <use xlink:href="img/sprites/sprite.svg#world"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Количество</div>
+                                    <div class="card__description">У нас постоянно обновляющаяся и растущая база из Residental, Mobile и Corporate прокси! Все страны мира, более 9 млн IP</div>
+                                    <div class="card__bottom">
+                                        <a href="#" class="link">
+                                            Подробнее
+                                            <svg>
+                                                <use xlink:href="img/sprites/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <svg>
+                                                <use xlink:href="img/sprites/sprite.svg#speed"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Скорость и удобство</div>
+                                    <div class="card__description">Пользуетесь прокси листами? Отлично!<br/> У нас они есть! Любите создавать порты? Супер! И это мы можем!</div>
+                                    <div class="card__bottom">
+                                        <a href="#" class="link">
+                                            Подробнее
+                                            <svg>
+                                                <use xlink:href="img/sprites/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="title">У нас есть все типы прокси<br/> по самой низкой цене!</h2>
+                    <p class="description">Лучшая прокси-инфраструктура с ведущими в отрасли резидентными прокси-серверами.<br/> Наши прокси идеально подходят для обхода геоограничений, капч и IP-блоков.</p>
+                    <div class="section__content">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 offset-md-3 mb-4">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <svg>
+                                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Резидентные прокси</div>
+                                    <div class="card__list">
+                                        <div class="card__list-item">3M+ IP</div>
+                                        <div class="card__list-item">195+ locations</div>
+                                        <div class="card__list-item">HTTP(s) + SOCKS5</div>
+                                    </div>
+                                    <div class="card__description">Мы даем самую низкую цену на трафик! Найдете ниже — приходите, и мы сделаем скидку!</div>
+                                    <div class="card__bottom">
+                                        <a href="#" class="btn btn-price">
+                                            <span>3$</span>/gb
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 offset-md-3 mb-4">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <svg>
+                                                <use xlink:href="img/sprites/sprite.svg#mobile"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Мобильные прокси</div>
+                                    <div class="card__list">
+                                        <div class="card__list-item">3M+ IP</div>
+                                        <div class="card__list-item">195+ locations</div>
+                                        <div class="card__list-item">HTTP(s) + SOCKS5</div>
+                                    </div>
+                                    <div class="card__description">Мы даем самую низкую цену на трафик! Найдете ниже — приходите, и мы сделаем скидку!</div>
+                                    <div class="card__bottom">
+                                        <a href="#" class="btn btn-price">
+                                            <span>3$</span>/gb
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 offset-md-3">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <svg>
+                                                <use xlink:href="img/sprites/sprite.svg#server"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Серверные прокси</div>
+                                    <div class="card__list">
+                                        <div class="card__list-item">3M+ IP</div>
+                                        <div class="card__list-item">195+ locations</div>
+                                        <div class="card__list-item">HTTP(s) + SOCKS5</div>
+                                    </div>
+                                    <div class="card__description">Мы даем самую низкую цену на трафик! Найдете ниже — приходите, и мы сделаем скидку!</div>
+                                    <div class="card__bottom">
+                                        <a href="#" class="btn btn-price">
+                                            <span>3$</span>/gb
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="title">Наши прокси прекрасно подойдут:</h2>
+                    <div class="section__content">
+                        <div class="row mb-4">
+                            <div class="col-sm-12 col-md-4 mb-4 mb-md-0">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-1.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-2.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-3.png" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Арбитражникам</div>
+                                    <div class="card__description mb-0">Мы сами заливаем на Facebook и знаем как важно, чтобы аккаунты не отлетали в бан, а спенды росли</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 mb-4 mb-md-0">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-4.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-5.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-6.png" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Для Антидетект браузеров</div>
+                                    <div class="card__description mb-0">Наши порты очень удобно создавать<br/> и подгружать во все антидетект браузеры</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-7.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-8.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-9.png" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Для серфинга<br/> и даже игр</div>
+                                    <div class="card__description mb-0">Быстрая скорость, все страны и удобство использования, что ещё нужно, чтобы серфить в интернете</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 mb-4 mb-md-0">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-10.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-11.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-12.png" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Для парсинга</div>
+                                    <div class="card__description mb-0">Встроенная IP ротация позволит избежать CAPTCHA и IP блокировок</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 mb-4 mb-md-0">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-13.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-14.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-15.png" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="card__title">SMM специалистам</div>
+                                    <div class="card__description mb-0">Мы даем самую низкую цену на трафик! Найдете ниже — приходите, и мы сделаем скидку!</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="card">
+                                    <div class="card__icons">
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-16.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-17.png" alt="icon">
+                                        </div>
+                                        <div class="card__icons-item">
+                                            <img src="img/icon-18.png" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="card__title">Для бизнеса<br/> и e-commerce</div>
+                                    <div class="card__description mb-0">Анализируйте рынок и конкурентов, оставаясь незамеченным</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+    <div class="footer__content">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <nav class="footer__nav">
+                        <div class="footer__nav-title">Компания</div>
+                        <ul>
+                            <li><a href="#">Тарифный план</a></li>
+                            <li><a href="#">Справочный центр</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <nav class="footer__nav">
+                        <div class="footer__nav-title">Документация</div>
+                        <ul>
+                            <li><a href="#">Условия эксплуатации</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Политика Cookie</a></li>
+                            <li><a href="#">Политика возврата</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-6 col-md-3">
+                    <nav class="footer__nav">
+                        <div class="footer__nav-title">Продукты</div>
+                        <ul>
+                            <li><a href="#">Бизнесу</a></li>
+                            <li><a href="#">Частным клиентам</a></li>
+                            <li><a href="#">Сравнение</a></li>
+                            <li><a href="#">Покрытие</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="footer__logo" src="img/logo.png" alt="Ake.net">
+                    <div class="footer__contacts">
+                        <div class="footer__contacts-item">
+                            <img src="img/email.svg" alt="Email">
+                            <a href="mailto:support@ake.net" target="_blank">support@ake.net</a>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <img src="img/phone.svg" alt="Phone">
+                            <a href="tel:+44 07532724530" target="_blank">+44 07532724530</a>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <img src="img/telegram.svg" alt="Telegram">
+                            <a href="https://t.me/Ake_proxy" target="_blank">@Ake_proxy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__cr">
+        <div class="container">
+            Ake.net © Все права защищены 30 N Gould St Ste R Sheridan, WY 82801
+        </div>
+    </div>
+</footer>
+        <script src="js/vendor.min.js"></script>
+        <script src="https://cdn.min.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.min.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>
