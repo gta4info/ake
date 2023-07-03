@@ -27,144 +27,14 @@
     </head>
     <body>
         <header class="header sticky-top">
-    <div class="header__container container-fluid d-flex align-items-center">
+    <div class="header__container container d-flex align-items-center">
         <a class="header__logo" href="#">
             <img src="img/logo.png" alt="Ake.net">
         </a>
         <nav class="header__nav">
-            <div class="dropdown">
-                <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Прокси
-                    <svg class="arrow">
-                        <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
-                    </svg>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li>
-                        <div class="dropdown-item active">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
-                            </svg>
-                            <div class="d-flex flex-column">
-                                <div class="dropdown-item__title">Резидентные</div>
-                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown-item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
-                            </svg>
-                            <div class="d-flex flex-column">
-                                <div class="dropdown-item__title">Мобильные</div>
-                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown-item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
-                            </svg>
-                            <div class="d-flex flex-column">
-                                <div class="dropdown-item__title">Серверные</div>
-                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Цены
-                    <svg class="arrow">
-                        <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
-                    </svg>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li>
-                        <div class="dropdown-item active">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
-                            </svg>
-                            <div class="d-flex flex-column">
-                                <div class="dropdown-item__title">Резидентные</div>
-                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown-item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
-                            </svg>
-                            <div class="d-flex flex-column">
-                                <div class="dropdown-item__title">Мобильные</div>
-                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown-item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
-                            </svg>
-                            <div class="d-flex flex-column">
-                                <div class="dropdown-item__title">Серверные</div>
-                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Информация
-                    <svg class="arrow">
-                        <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
-                    </svg>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li>
-                        <div class="dropdown-item active">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
-                            </svg>
-                            <div class="d-flex flex-column">
-                                <div class="dropdown-item__title">Резидентные</div>
-                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown-item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
-                            </svg>
-                            <div class="d-flex flex-column">
-                                <div class="dropdown-item__title">Мобильные</div>
-                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown-item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#residential"></use>
-                            </svg>
-                            <div class="d-flex flex-column">
-                                <div class="dropdown-item__title">Серверные</div>
-                                <div class="dropdown-item__text">Monitor your favorite trading pairs in real time</div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <a href="#" class="header__nav-link">Контакты</a>
+            <a href="#proxy" class="header__nav-link">Прокси</a>
+            <a href="#info" class="header__nav-link">Информация</a>
+            <a href="#contacts" class="header__nav-link">Контакты</a>
         </nav>
         <div class="lang-selector">
             <div class="dropdown">
@@ -210,52 +80,9 @@
 
 <div class="collapse burgerMenu" id="burgerMenu">
     <div class="burgerMenu__content">
-        <div class="burgerMenu__collapse">
-            <a class="burgerMenu__link" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="Link">
-                Прокси
-                <svg class="arrow">
-                    <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
-                </svg>
-            </a>
-            <div class="collapse" id="collapse1">
-                <ul>
-                    <li><a href="#">Резидентные</a></li>
-                    <li><a href="#">Мобильные</a></li>
-                    <li><a href="#">Серверные</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="burgerMenu__collapse">
-            <a class="burgerMenu__link" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="Link">
-                Цены
-                <svg class="arrow">
-                    <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
-                </svg>
-            </a>
-            <div class="collapse" id="collapse2">
-                <ul>
-                    <li><a href="#">Резидентные</a></li>
-                    <li><a href="#">Мобильные</a></li>
-                    <li><a href="#">Серверные</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="burgerMenu__collapse">
-            <a class="burgerMenu__link" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="Link">
-                Информация
-                <svg class="arrow">
-                    <use xlink:href="img/sprites/sprite.svg#dropdown"></use>
-                </svg>
-            </a>
-            <div class="collapse" id="collapse3">
-                <ul>
-                    <li><a href="#">Резидентные</a></li>
-                    <li><a href="#">Мобильные</a></li>
-                    <li><a href="#">Серверные</a></li>
-                </ul>
-            </div>
-        </div>
-        <a class="burgerMenu__link">Контакты</a>
+        <a href="#proxy" class="burgerMenu__link" onclick="document.getElementsByClassName('header__burger')[0].click()">Прокси</a>
+        <a href="#info" class="burgerMenu__link" onclick="document.getElementsByClassName('header__burger')[0].click()">Информация</a>
+        <a href="#contacts" class="burgerMenu__link" onclick="document.getElementsByClassName('header__burger')[0].click()">Контакты</a>
         <div class="burgerMenu__lang">
             <div class="burgerMenu__lang-title">Язык</div>
             <a class="burgerMenu__lang-current" data-bs-toggle="collapse" href="#collapseLangs" role="button" aria-expanded="false" aria-controls="Languages">
@@ -291,7 +118,7 @@
         </div>
     </div>
 </div>
-        <footer class="footer">
+        <footer id="contacts" class="footer">
     <div class="footer__content">
         <div class="container">
             <div class="row">
